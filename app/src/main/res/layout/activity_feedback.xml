@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:context="com.example.ritz.survey_main.feedbackActivity">
+
+
+        <TextView
+            android:id="@+id/ratingExplain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="16dp"
+            android:text="1.Poor   2. Average   3. Good   4. Very Good   5. Excellent"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:typeface="serif"/>
+
+
+        <RatingBar
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ratingExplain"
+            android:numStars="5"
+            android:rating="2"
+            android:stepSize="1" />
+
+        <TextView
+            android:id="@+id/ques1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rating"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:text="1. Food is provided on time"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:typeface="serif"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ques1"
+            android:numStars="5"
+            android:rating="2.0"
+            android:stepSize="1.0" />
+
+        <TextView
+            android:id="@+id/ques2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ratingBar1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:text="2. Food is provided on time"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:typeface="serif"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ques2"
+            android:numStars="5"
+            android:rating="2.0"
+            android:stepSize="1.0" />
+
+        <TextView
+            android:id="@+id/ques3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ratingBar2"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:text="3. Food is provided on time"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:typeface="serif"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ques3"
+            android:numStars="5"
+            android:rating="2.0"
+            android:stepSize="1.0" />
+
+        <TextView
+            android:id="@+id/ques4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ratingBar3"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:text="4. Food is provided on time"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:typeface="serif"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ques4"
+            android:numStars="5"
+            android:rating="2.0"
+            android:stepSize="1.0" />
+
+        <TextView
+            android:id="@+id/ques5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ratingBar4"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:text="5. Food is provided on time"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:typeface="serif"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ques5"
+            android:numStars="5"
+            android:rating="2.0"
+            android:stepSize="1.0" />
+
+        <TextView
+            android:id="@+id/ques6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ratingBar5"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:text="6. Food is provided on time"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:typeface="serif"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ques6"
+            android:numStars="5"
+            android:rating="2.0"
+            android:stepSize="1.0" />
+
+        <TextView
+            android:id="@+id/ques7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ratingBar6"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:text="7. Food is provided on time"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:typeface="serif"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ques7"
+            android:numStars="5"
+            android:rating="2.0"
+            android:stepSize="1.0" />
+
+        <TextView
+            android:id="@+id/ques8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ratingBar7"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:text="8. Food is provided on time"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:typeface="serif"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ques8"
+            android:numStars="5"
+            android:rating="2.0"
+            android:stepSize="1.0" />
+
+        <TextView
+            android:id="@+id/ques9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ratingBar8"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:text="9. Food is provided on time"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:typeface="serif"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ques9"
+            android:numStars="5"
+            android:rating="2.0"
+            android:stepSize="1.0" />
+
+        <TextView
+            android:id="@+id/ques10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ratingBar9"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:text="10. Food is provided on time"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:typeface="serif"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ques10"
+            android:numStars="5"
+            android:rating="2.0"
+            android:stepSize="1.0" />
+
+        <TextView
+            android:id="@+id/ques11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ratingBar10"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:text="11. Food is provided on time"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:typeface="serif"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ques11"
+            android:layout_marginBottom="16dp"
+            android:numStars="5"
+            android:rating="2.0"
+            android:stepSize="1.0"/>
+
+        <Button
+            android:id="@+id/feedSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/ratingBar11"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="16dp"
+            android:text="Submit" />
+
+    </RelativeLayout>
+</ScrollView>

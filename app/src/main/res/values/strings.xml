@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MessManagement</string>
+    <string name="login_info">Choose a Type</string>
+
+    <string-array name="login_info">
+        <item>Worker</item>
+        <item>Student</item>
+        <item>Guest</item>
+    </string-array>
+</resources>
