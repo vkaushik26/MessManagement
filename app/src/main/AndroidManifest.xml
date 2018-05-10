@@ -24,6 +24,15 @@
         <activity android:name=".feedbackActivity"/>
         <activity android:name=".menuActivity"/>
         <activity android:name=".suggestionActivity"></activity>
+        <activity android:name=".thursdayActivity"></activity>
+        <activity android:name=".tuesdayActivity"></activity>
+        <activity android:name=".wednesdayActivity"></activity>
+        <activity android:name=".Worker_class"></activity>
+        <activity android:name=".fridayActivity"></activity>
+        <activity android:name=".mondayActivity"></activity>
+        <activity android:name=".sundayActivity"></activity>
+        <activity android:name=".Stck"></activity>
+
     </application>
 
 </manifest>

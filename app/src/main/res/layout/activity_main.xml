@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kaush.messmanagement.Sign_Up">
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:paddingTop="10dp"
     android:paddingBottom="10dp"
     android:paddingRight="10dp"
-    android:paddingLeft="10dp"
-    tools:context="com.example.kaush.messmanagement.Sign_Up">
+    android:paddingLeft="10dp">
 
 
     <RelativeLayout
@@ -64,6 +68,7 @@
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="15dp"
                 android:id="@+id/login_info"
                 android:entries="@array/login_info"
                 android:prompt="@array/login_info"
@@ -80,16 +85,27 @@
                 android:textAllCaps="false"
                 />
 
+
             <TextView
                 android:id="@+id/textViewSignup"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
                 android:padding="15dp"
                 android:text="Don't have account? Sign Up"
-                android:textColor="@color/colorAccent"
+                android:textColor="@color/colorPrimary"
                 android:textAlignment="center"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                 />
         </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
     </RelativeLayout>
 </LinearLayout>
+</ScrollView>

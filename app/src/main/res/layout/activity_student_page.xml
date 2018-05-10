@@ -35,5 +35,12 @@
         android:layout_centerHorizontal="true"
         android:onClick="suggestionPage"
         android:text="Suggestion" />
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/suggestButton"
+        android:layout_centerHorizontal="true"
+        android:text="Logout"/>
 
 </RelativeLayout>

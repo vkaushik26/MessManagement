@@ -41,7 +41,7 @@ public class Sign_Up extends AppCompatActivity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login__page);
         database = FirebaseDatabase.getInstance();
-        ref = database.getReference("User");
+        ref = database.getReference("User1");
         user = new User();
         firebaseAuth = FirebaseAuth.getInstance();
         progressDialog = new ProgressDialog(this);

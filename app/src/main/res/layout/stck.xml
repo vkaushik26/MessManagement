@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:padding="@dimen/padding">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="@string/stock_heading"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/month"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height"
+        android:layout_marginTop="@dimen/marginTop"
+        android:entries="@array/stock_month"
+        android:prompt="@array/stock_month"/>
+
+    <EditText
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/month"
+        android:hint="@string/food_item"
+        android:inputType="textCapWords" />
+
+    <EditText
+        android:id="@+id/quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item"
+        android:hint="@string/food_quantity" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/quantity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/padding"
+        android:background="@drawable/mybutton"
+        android:drawablePadding="@dimen/drawablePadding"
+        android:drawableEnd="@drawable/cart1"
+        android:drawableRight="@drawable/cart1"
+        android:padding="@dimen/padding"
+        android:text="@string/add_to_cart"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button2"
+        android:layout_marginBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/displayMonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginBottom="@dimen/drawablePadding"/>
+            <TextView
+                android:id="@+id/display"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/quantity"
+        android:layout_marginTop="@dimen/padding"
+        android:background="@drawable/mybutton"
+        android:padding="@dimen/padding"
+        android:text="@string/save"
+        android:textStyle="bold" />
+</RelativeLayout>

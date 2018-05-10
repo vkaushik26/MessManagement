@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marginTop">25dp</dimen>
+    <dimen name="drawablePadding">5dp</dimen>
+    <dimen name="padding">10dp</dimen>
+    <dimen name="text">20sp</dimen>
+    <dimen name="height">40dp</dimen>
+</resources>

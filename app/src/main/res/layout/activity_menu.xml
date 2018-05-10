@@ -1,301 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".menuActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
-    <TableLayout
-        android:id="@+id/tableLayout1"
+    <TextView
+        android:id="@+id/heading"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="16sp"
-        android:shrinkColumns="*"
-        android:stretchColumns="*">
-        <TableRow
-            android:id="@+id/firstRow"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp"
-            android:gravity="center_horizontal">
-            <TextView
-                android:id="@+id/heading"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_span="5"
-                android:gravity="center"
-                android:text="Mess TimeTable"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:typeface="serif"/>
-        </TableRow>
+        android:layout_height="wrap_content"
+        android:layout_span="5"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text=" WEEKLY MESS MENU"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
 
-        <TableRow
-            android:id="@+id/secondRow"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp">
-            <TextView
-                android:id="@+id/common"
-                android:text=""
-                android:textStyle="bold"
-                android:typeface="serif"/>
-            <TextView
-                android:id="@+id/breakfast"
-                android:text="Breakfast"
-                android:textStyle="bold"
-                android:typeface="serif" />
-            <TextView
-                android:id="@+id/lunch"
-                android:text="Lunch"
-                android:textStyle="bold"
-                android:typeface="serif" />
-            <TextView
-                android:id="@+id/snacks"
-                android:text="Snacks"
-                android:textStyle="bold"
-                android:typeface="serif"/>
-            <TextView
-                android:id="@+id/dinner"
-                android:text="Dinner"
-                android:textStyle="bold"
-                android:typeface="serif"/>
-        </TableRow>
 
-        <TableRow
-            android:id="@+id/thirdRow"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp">
-            <TextView
-                android:id="@+id/monday"
-                android:text="Monday"
-                android:textStyle="bold"
-                android:typeface="serif"/>
-            <TextView
-                android:id="@+id/breakfast1"
-                android:text="Breakfast"
-                android:textStyle="bold"
-                android:typeface="serif" />
-            <TextView
-                android:id="@+id/lunch1"
-                android:text="Lunch"
-                android:textStyle="bold"
-                android:typeface="serif" />
-            <TextView
-                android:id="@+id/snacks1"
-                android:text="Snacks"
-                android:textStyle="bold"
-                android:typeface="serif"/>
-            <TextView
-                android:id="@+id/dinner1"
-                android:text="Dinner"
-                android:textStyle="bold"
-                android:typeface="serif"/>
-        </TableRow>
+    <Button
 
-        <TableRow
-            android:id="@+id/fourthRow"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp">
-            <TextView
-                android:id="@+id/tuesday"
-                android:text="Tuesday"
-                android:textStyle="bold"
-                android:typeface="serif"/>
-            <TextView
-                android:id="@+id/breakfast2"
-                android:text="Breakfast"
-                android:textStyle="bold"
-                android:typeface="serif" />
-            <TextView
-                android:id="@+id/lunch2"
-                android:text="Lunch"
-                android:textStyle="bold"
-                android:typeface="serif" />
-            <TextView
-                android:id="@+id/snacks2"
-                android:text="Snacks"
-                android:textStyle="bold"
-                android:typeface="serif"/>
-            <TextView
-                android:id="@+id/dinner2"
-                android:text="Dinner"
-                android:textStyle="bold"
-                android:typeface="serif"/>
-        </TableRow>
+        android:id="@+id/sunday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heading"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:gravity="left"
+        android:onClick="sundayPage"
+        android:padding="16dp"
+        android:text="sunday"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
 
-        <TableRow
-            android:id="@+id/fifthRow"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp">
-            <TextView
-                android:id="@+id/wednesday"
-                android:text="Wednesday"
-                android:textStyle="bold"
-                android:typeface="serif"/>
-            <TextView
-                android:id="@+id/breakfast3"
-                android:text="Breakfast"
-                android:textStyle="bold"
-                android:typeface="serif" />
-            <TextView
-                android:id="@+id/lunch3"
-                android:text="Lunch"
-                android:textStyle="bold"
-                android:typeface="serif" />
-            <TextView
-                android:id="@+id/snacks3"
-                android:text="Snacks"
-                android:textStyle="bold"
-                android:typeface="serif"/>
-            <TextView
-                android:id="@+id/dinner3"
-                android:text="Dinner"
-                android:textStyle="bold"
-                android:typeface="serif"/>
-        </TableRow>
+    <Button
 
-        <TableRow
-            android:id="@+id/sixthRow"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp">
-            <TextView
-                android:id="@+id/thursday"
-                android:text="Thursday"
-                android:textStyle="bold"
-                android:typeface="serif"/>
-            <TextView
-                android:id="@+id/breakfast4"
-                android:text="Breakfast"
-                android:textStyle="bold"
-                android:typeface="serif" />
-            <TextView
-                android:id="@+id/lunch4"
-                android:text="Lunch"
-                android:textStyle="bold"
-                android:typeface="serif" />
-            <TextView
-                android:id="@+id/snacks4"
-                android:text="Snacks"
-                android:textStyle="bold"
-                android:typeface="serif"/>
-            <TextView
-                android:id="@+id/dinner4"
-                android:text="Dinner"
-                android:textStyle="bold"
-                android:typeface="serif"/>
-        </TableRow>
+        android:id="@+id/monday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sunday"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:gravity="left"
+        android:onClick="mondayPage"
+        android:padding="16dp"
+        android:text="monday"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
 
-        <TableRow
-            android:id="@+id/seventhRow"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp">
-            <TextView
-                android:id="@+id/friday"
-                android:text="Friday"
-                android:textStyle="bold"
-                android:typeface="serif"/>
-            <TextView
-                android:id="@+id/breakfast5"
-                android:text="Breakfast"
-                android:textStyle="bold"
-                android:typeface="serif" />
-            <TextView
-                android:id="@+id/lunch5"
-                android:text="Lunch"
-                android:textStyle="bold"
-                android:typeface="serif" />
-            <TextView
-                android:id="@+id/snacks5"
-                android:text="Snacks"
-                android:textStyle="bold"
-                android:typeface="serif"/>
-            <TextView
-                android:id="@+id/dinner5"
-                android:text="Dinner"
-                android:textStyle="bold"
-                android:typeface="serif"/>
-        </TableRow>
+    <Button
 
-        <TableRow
-            android:id="@+id/eighthRow"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp">
-            <TextView
-                android:id="@+id/saturday"
-                android:text="Saturday"
-                android:textStyle="bold"
-                android:typeface="serif"/>
-            <TextView
-                android:id="@+id/breakfast6"
-                android:text="Breakfast"
-                android:textStyle="bold"
-                android:typeface="serif" />
-            <TextView
-                android:id="@+id/lunch6"
-                android:text="Lunch"
-                android:textStyle="bold"
-                android:typeface="serif" />
-            <TextView
-                android:id="@+id/snacks6"
-                android:text="Snacks"
-                android:textStyle="bold"
-                android:typeface="serif"/>
-            <TextView
-                android:id="@+id/dinner6"
-                android:text="Dinner"
-                android:textStyle="bold"
-                android:typeface="serif"/>
-        </TableRow>
+        android:id="@+id/tuesday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/monday"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:gravity="left"
+        android:onClick="tuesdayPage"
+        android:padding="16dp"
+        android:text="tuesday"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
 
-        <TableRow
-            android:id="@+id/ninthRow"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp">
-            <TextView
-                android:id="@+id/sunday"
-                android:text="Sunday"
-                android:textStyle="bold"
-                android:typeface="serif"/>
-            <TextView
-                android:id="@+id/breakfast7"
-                android:text="Breakfast"
-                android:textStyle="bold"
-                android:typeface="serif" />
-            <TextView
-                android:id="@+id/lunch7"
-                android:text="Lunch"
-                android:textStyle="bold"
-                android:typeface="serif" />
-            <TextView
-                android:id="@+id/snacks7"
-                android:text="Snacks"
-                android:textStyle="bold"
-                android:typeface="serif"/>
-            <TextView
-                android:id="@+id/dinner7"
-                android:text="Dinner"
-                android:textStyle="bold"
-                android:typeface="serif"/>
-        </TableRow>
+    <Button
 
-    </TableLayout>
+        android:id="@+id/wednesday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tuesday"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:gravity="left"
+        android:onClick="wednesdayPage"
+        android:padding="16dp"
+        android:text="wednesday"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <Button
+
+        android:id="@+id/thursday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wednesday"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:gravity="left"
+        android:onClick="thursdayPage"
+        android:padding="20dp"
+        android:text="thursday"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <Button
+
+        android:id="@+id/friday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/thursday"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:gravity="left"
+        android:onClick="fridayPage"
+        android:padding="16dp"
+        android:text="friday"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <Button
+
+        android:id="@+id/saturday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/friday"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:gravity="left"
+        android:onClick="saturdayPage"
+        android:padding="20dp"
+        android:text="saturday"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>
+
 
 </ScrollView>

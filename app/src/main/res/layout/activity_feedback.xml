@@ -14,37 +14,40 @@
 
 
         <TextView
-            android:id="@+id/ratingExplain"
+            android:id="@+id/rating"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_marginBottom="16dp"
+            android:text="Rate the  following question on the scale of five describe as follows : "
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="sans"/>
+
+        <TextView
+            android:id="@+id/ratingExplain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rating"
+            android:layout_marginBottom="16dp"
             android:text="1.Poor   2. Average   3. Good   4. Very Good   5. Excellent"
             android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:textStyle="normal"
-            android:typeface="serif"/>
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:typeface="sans"/>
 
-
-        <RatingBar
-            android:id="@+id/rating"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/ratingExplain"
-            android:numStars="5"
-            android:rating="2"
-            android:stepSize="1" />
 
         <TextView
             android:id="@+id/ques1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/rating"
+            android:layout_below="@id/ratingExplain"
             android:layout_marginBottom="16dp"
             android:layout_marginTop="16dp"
-            android:text="1. Food is provided on time"
+            android:text="1. Timing of mess"
             android:textColor="@android:color/black"
-            android:textSize="18sp"
+            android:textSize="18dp"
             android:textStyle="normal"
             android:typeface="serif"/>
 
@@ -64,9 +67,9 @@
             android:layout_below="@id/ratingBar1"
             android:layout_marginBottom="16dp"
             android:layout_marginTop="16dp"
-            android:text="2. Food is provided on time"
+            android:text="2. Service by Staff"
             android:textColor="@android:color/black"
-            android:textSize="18sp"
+            android:textSize="18dp"
             android:textStyle="normal"
             android:typeface="serif"/>
 
@@ -86,9 +89,9 @@
             android:layout_below="@id/ratingBar2"
             android:layout_marginBottom="16dp"
             android:layout_marginTop="16dp"
-            android:text="3. Food is provided on time"
+            android:text="3. Behaviour of mess Staff"
             android:textColor="@android:color/black"
-            android:textSize="18sp"
+            android:textSize="18dp"
             android:textStyle="normal"
             android:typeface="serif"/>
 
@@ -108,9 +111,9 @@
             android:layout_below="@id/ratingBar3"
             android:layout_marginBottom="16dp"
             android:layout_marginTop="16dp"
-            android:text="4. Food is provided on time"
+            android:text="4. Availability of safe and pure drinking water"
             android:textColor="@android:color/black"
-            android:textSize="18sp"
+            android:textSize="18dp"
             android:textStyle="normal"
             android:typeface="serif"/>
 
@@ -130,9 +133,9 @@
             android:layout_below="@id/ratingBar4"
             android:layout_marginBottom="16dp"
             android:layout_marginTop="16dp"
-            android:text="5. Food is provided on time"
+            android:text="5. Freshness of food "
             android:textColor="@android:color/black"
-            android:textSize="18sp"
+            android:textSize="18dp"
             android:textStyle="normal"
             android:typeface="serif"/>
 
@@ -152,9 +155,9 @@
             android:layout_below="@id/ratingBar5"
             android:layout_marginBottom="16dp"
             android:layout_marginTop="16dp"
-            android:text="6. Food is provided on time"
+            android:text="6. Quality of Food"
             android:textColor="@android:color/black"
-            android:textSize="18sp"
+            android:textSize="18dp"
             android:textStyle="normal"
             android:typeface="serif"/>
 
@@ -174,9 +177,9 @@
             android:layout_below="@id/ratingBar6"
             android:layout_marginBottom="16dp"
             android:layout_marginTop="16dp"
-            android:text="7. Food is provided on time"
+            android:text="7. Quantity served"
             android:textColor="@android:color/black"
-            android:textSize="18sp"
+            android:textSize="18dp"
             android:textStyle="normal"
             android:typeface="serif"/>
 
@@ -196,9 +199,9 @@
             android:layout_below="@id/ratingBar7"
             android:layout_marginBottom="16dp"
             android:layout_marginTop="16dp"
-            android:text="8. Food is provided on time"
+            android:text="8. Variety in meals "
             android:textColor="@android:color/black"
-            android:textSize="18sp"
+            android:textSize="18dp"
             android:textStyle="normal"
             android:typeface="serif"/>
 
@@ -218,9 +221,9 @@
             android:layout_below="@id/ratingBar8"
             android:layout_marginBottom="16dp"
             android:layout_marginTop="16dp"
-            android:text="9. Food is provided on time"
+            android:text="9. Taste of meals"
             android:textColor="@android:color/black"
-            android:textSize="18sp"
+            android:textSize="18dp"
             android:textStyle="normal"
             android:typeface="serif"/>
 
@@ -240,9 +243,9 @@
             android:layout_below="@id/ratingBar9"
             android:layout_marginBottom="16dp"
             android:layout_marginTop="16dp"
-            android:text="10. Food is provided on time"
+            android:text="10. "
             android:textColor="@android:color/black"
-            android:textSize="18sp"
+            android:textSize="18dp"
             android:textStyle="normal"
             android:typeface="serif"/>
 
@@ -262,9 +265,9 @@
             android:layout_below="@id/ratingBar10"
             android:layout_marginBottom="16dp"
             android:layout_marginTop="16dp"
-            android:text="11. Food is provided on time"
+            android:text="11. Ability of staff to meet your need"
             android:textColor="@android:color/black"
-            android:textSize="18sp"
+            android:textSize="18dp"
             android:textStyle="normal"
             android:typeface="serif"/>
 

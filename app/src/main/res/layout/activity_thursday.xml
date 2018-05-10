@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.example.ritz.survey_main.thursdayActivity">
+
+    <TextView
+        android:id="@+id/breakfastHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="serif"
+        android:text="Breakfast"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/breakfastTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/breakfastHeading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="serif"
+        android:text="(7:00 - 9:00) am"
+        android:textSize="16sp"
+        android:textStyle="italic|bold" />
+
+    <TextView
+        android:id="@+id/breakfastContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/breakfastTime"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="cursive"
+        android:text="Onion, Green Chilli Paratha / Methi Paratha + Curd + Tea"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/lunchHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/breakfastContent"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="serif"
+        android:text="Lunch"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lunchTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lunchHeading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="serif"
+        android:text="(12:00 - 2:00) pm"
+        android:textSize="16sp"
+        android:textStyle="italic|bold" />
+
+    <TextView
+        android:id="@+id/lunchContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lunchTime"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="cursive"
+        android:text="Karhi Pakora + Aloo Mutter + Rice + Roti +Salad "
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/snackHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lunchContent"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="serif"
+        android:text="Snack"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/snackTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/snackHeading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="serif"
+        android:text="(5:00 - 6:00) pm"
+        android:textSize="16sp"
+        android:textStyle="italic|bold" />
+
+    <TextView
+        android:id="@+id/snackContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/snackTime"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="cursive"
+        android:text="Stuff Kulcha + Tea"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/dinnerHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/snackContent"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="serif"
+        android:text="Dinner"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/dinnerTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dinnerHeading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="serif"
+        android:text="(7:30 - 9:00) pm"
+        android:textSize="16sp"
+        android:textStyle="italic|bold" />
+
+    <TextView
+        android:id="@+id/dinnerContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dinnerTime"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="cursive"
+        android:text="Dal Fry + Seasonal Veg + Rice + Roti + Kulfi/Keasr Ladoo"
+        android:textSize="30sp" />
+
+
+</RelativeLayout>
+</ScrollView>

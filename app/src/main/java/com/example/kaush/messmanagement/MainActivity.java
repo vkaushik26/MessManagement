@@ -18,8 +18,12 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -28,12 +32,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private FirebaseAuth firebaseAuth;
     private ProgressDialog progressDialog;
     private Spinner spinnerlogin_info;
+    DatabaseReference mref,jref;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         firebaseAuth = FirebaseAuth.getInstance();
+        mref=FirebaseDatabase.getInstance().getReference();
+        jref=FirebaseDatabase.getInstance().getReference();
         progressDialog = new ProgressDialog(this);
         editTextEmail = (EditText) findViewById(R.id.editTextEmail);
         editTextPassword = (EditText) findViewById(R.id.editTextPassword);
@@ -56,15 +63,39 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             editTextPassword.requestFocus();
             return;
         }
-        progressDialog.setMessage("Loging In...");
+        progressDialog.setMessage("Logging In...");
         progressDialog.show();
         firebaseAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener( new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
-                    Intent intent = new Intent(MainActivity.this,Student.class);
-                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                    startActivity(intent);
+                    FirebaseUser us=firebaseAuth.getCurrentUser();
+//                    jref=jref.child("User1").child(us.getUid()).getRef();
+//                    jref=FirebaseDatabase.getInstance().getReference("User");
+                    jref.child("User").child(us.getUid()).addValueEventListener(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(DataSnapshot dataSnapshot) {
+                            String opt=dataSnapshot.child("Option").getValue(String.class);
+                            if(opt.equals("Student"))
+                            {
+                                Intent intent = new Intent(MainActivity.this,Student.class);
+                                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                                startActivity(intent);
+                            }
+                            if(opt.equals("Worker"))
+                            {
+                                Intent intent = new Intent(MainActivity.this,Worker_class.class);
+                                startActivity(intent);
+                                Toast.makeText(getApplicationContext(),"Worker",Toast.LENGTH_SHORT).show();
+                            }
+                        }
+
+                        @Override
+                        public void onCancelled(DatabaseError databaseError) {
+
+                        }
+                    });
+
                 }
                 else{
                     Toast.makeText(getApplicationContext(),task.getException().getMessage(),Toast.LENGTH_SHORT).show();

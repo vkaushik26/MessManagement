@@ -5,6 +5,24 @@
     <string-array name="login_info">
         <item>Worker</item>
         <item>Student</item>
-        <item>Guest</item>
     </string-array>
+    <string-array name="stock_month">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+    <string name="stock_heading">Monthly stock items</string>
+    <string name="food_item">Enter food item</string>
+    <string name="food_quantity">Enter food quantity</string>
+    <string name="save">save</string>
+    <string name="add_to_cart">add to cart</string>
 </resources>
